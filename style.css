@@ -100,3 +100,8 @@ a:hover {
 #big-img {
     height: 70vh
 }
+
+footer {
+    font-size: 22px;
+    text-align: center;
+}
