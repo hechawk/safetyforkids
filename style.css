@@ -1,0 +1,102 @@
+@font-face {
+    font-family: "arial-rounded";
+    src: url(fonts/arial-rounded.ttf);
+}
+
+body{
+    margin: 0;
+    font-family: "arial-rounded";
+}
+
+ul {
+    margin: 0;
+    list-style-type: none;
+    padding: 0;
+}
+
+h1 {
+    margin: 0;
+    text-align: center;
+}
+
+#all {
+    display: flex;
+}
+
+#menu {
+    background-color: #648E37;
+    width: 25vw;
+    min-height: 100vh;
+    text-align: center;
+}
+
+#menu ul{
+    width: 25vw;
+    margin: 0;
+    position: fixed;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    font-size: 24px;
+}
+
+#content {
+    width: 75vw;
+    padding: 2%;
+    min-height: 100vh;
+    background-color: #FFD900;
+}
+
+#columns {
+    display: grid;
+    grid-template-columns: [left] 50% [middle] 50% [right];
+    grid-template-rows: [top] 50vh [center] 50vh [bottom];
+    place-items: center;
+}
+
+#columns p {
+    padding: 5%;
+}
+
+#left-text{
+    grid-column: left / middle;
+    grid-row: top / center;
+}
+
+#left-img{
+    grid-column: left / middle;
+    grid-row: center / bottom;
+}
+
+#right-text{
+    grid-column: middle / right;
+    grid-row: center / bottom;
+}
+
+#right-img{
+    grid-column: right / middle;
+    grid-row: top / center;
+}
+
+img {
+    max-height: 100%;
+    max-width: 100%;
+    border: solid #648E37;
+}
+
+a {
+    text-decoration: none;
+    color: #101511;
+}
+
+a:hover {
+    color: #7FA35C;
+}
+
+#centered {
+    text-align: center;
+}
+
+#big-img {
+    height: 70vh
+}
